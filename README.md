@@ -5,6 +5,8 @@ and the contents of this repository available to run and modify.
 
 ## hof: v0.6.8-beta.5
 
+[docs.hofstadter.io](https://docs.hofstadter.io)
+
 ```
 hof - the high code framework
 
@@ -38,6 +40,8 @@ Use "hof [command] --help / -h" for more information about a command.
 ```
 
 ## cue: v0.5.0-beta.5
+
+[cuelang.org](https://cuelang.org) | [cuetorials.com](https://cuetorials.com)
 
 ```
 cue evaluates CUE files, an extension of JSON, and sends them
