@@ -1,6 +1,6 @@
 name: "try hof"
 
-_version: "0.6.8-beta.3"
+_version: "0.6.8-beta.4"
 
 image: "mcr.microsoft.com/devcontainers/universal:2"
 
