@@ -1,4 +1,4 @@
-all: devc
+all: .devcontainer/devcontainer.json
 
-devc: hack/devc.cue
+.devcontainer/devcontainer.json: hack/devc.cue
 	cue export hack/devc.cue -f -o .devcontainer/devcontainer.json

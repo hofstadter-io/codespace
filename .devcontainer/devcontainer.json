@@ -1,7 +1,7 @@
 {
     "name": "try hof",
     "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "postCreateCommand": "wget https://github.com/hofstadter-io/hof/releases/download/v0.6.8-beta.2/hof_0.6.8-beta.2_Linux_x86_64 -O hof\nchmod +x hof\nsudo mv hof /usr/local/bin/hof\necho \"hallo!\"",
+    "onCreateCommand": "wget https://github.com/hofstadter-io/hof/releases/download/v0.6.8-beta.3/hof_0.6.8-beta.3_Linux_x86_64 -O hof\nchmod +x hof\nsudo mv hof /usr/local/bin/hof",
     "customizations": {
         "vscode": {
             "extensions": [
