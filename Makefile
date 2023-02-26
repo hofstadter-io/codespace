@@ -3,8 +3,13 @@ all: .devcontainer/devcontainer.json
 .devcontainer/devcontainer.json: hack/devc.cue
 	cue export hack/devc.cue -f -o .devcontainer/devcontainer.json
 
-HOF_VER=0.6.8-beta.5
-CUE_VER=v0.5.0-beta.5
+HOF_VER?=0.6.8-beta.7
+CUE_VER?=v0.5.0-beta.5
+
+versions:
+	@echo "HOF_VER: $(HOF_VER)"
+	@echo "CUE_VER: $(CUE_VER)"
+
 setup:
 	# install hof
 	wget https://github.com/hofstadter-io/hof/releases/download/v$(HOF_VER)/hof_$(HOF_VER)_Linux_x86_64 -O hof
