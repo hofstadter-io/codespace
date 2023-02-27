@@ -3,7 +3,7 @@
 Open a GitHub Codespace with the `hof` and `cue` tool installed
 and the contents of this repository available to run and modify.
 
-## hof: v0.6.8-beta.5
+## hof: v0.6.8-beta.7
 
 [docs.hofstadter.io](https://docs.hofstadter.io)
 
@@ -21,7 +21,7 @@ Main commands:
   gen                   modular and composable code gen: CUE & data + templates = _
   flow                  run CUE pipelines with the hof/flow DAG engine
   fmt                   format any code and manage the formatters
-  mod                   go style dependency management for CUE
+  mod                   CUE dependency management based on Go mods
 
 Additional commands:
   help                  help about any command

@@ -17,6 +17,8 @@ setup:
 	sudo mv hof /usr/local/bin/hof
 
 	# install cue
-	wget https://github.com/cue-lang/cue/releases/download/$(CUE_VER)/cue_$(CUE_VER)_linux_amd64 -O cue
-	chmod +x cue
-	sudo mv cue /usr/local/bin/cue
+	mkdir -p tmp
+	cd tmp && wget https://github.com/cue-lang/cue/releases/download/$(CUE_VER)/cue_$(CUE_VER)_linux_amd64.tar.gz -O cue.tar.gz
+	cd tmp && tar -xf cue.tar.gz
+	cd tmp && sudo mv cue /usr/local/bin/cue
+	rm -rf tmp
