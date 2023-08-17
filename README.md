@@ -3,7 +3,7 @@
 Open a GitHub Codespace with the `hof` and `cue` tool installed
 and the contents of this repository available to run and modify.
 
-## hof: v0.6.8-beta.7
+## hof
 
 [docs.hofstadter.io](https://docs.hofstadter.io)
 
@@ -16,12 +16,13 @@ Usage:
   hof [flags] [command] [args]
 
 Main commands:
-  create                dynamic blueprints from any git repo
+  create                dynamic app blueprints from any git repo
   datamodel             manage, diff, and migrate your data models
   gen                   modular and composable code gen: CUE & data + templates = _
   flow                  run CUE pipelines with the hof/flow DAG engine
   fmt                   format any code and manage the formatters
   mod                   CUE dependency management based on Go mods
+  chat                  co-create with AI (alpha)
 
 Additional commands:
   help                  help about any command
@@ -32,14 +33,17 @@ Additional commands:
 
 Flags:
   -h, --help             help for hof
+      --include-data     auto include all data files found with cue files
+      --inject-env       inject all ENV VARs as default tag vars
   -p, --package string   the Cue package context to use during execution
   -q, --quiet            turn off output and assume defaults at prompts
+  -t, --tags strings     @tags() to be injected into CUE code
   -v, --verbosity int    set the verbosity of output
 
 Use "hof [command] --help / -h" for more information about a command.
 ```
 
-## cue: v0.5.0-beta.5
+## cue
 
 [cuelang.org](https://cuelang.org) | [cuetorials.com](https://cuetorials.com)
 
@@ -64,6 +68,7 @@ run 'cue help cmd' or go to cuelang.org/pkg/cmd.
 For more information on writing CUE configuration files see cuelang.org.
 
 Usage:
+  cue [flags]
   cue [command]
 
 Available Commands:
@@ -84,7 +89,6 @@ Available Commands:
 
 Flags:
   -E, --all-errors   print all available errors
-  -h, --help         help for cue
   -i, --ignore       proceed in the presence of errors
   -s, --simplify     simplify output
       --strict       report errors for lossy mappings

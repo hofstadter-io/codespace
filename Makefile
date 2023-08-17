@@ -3,8 +3,8 @@ all: .devcontainer/devcontainer.json
 .devcontainer/devcontainer.json: hack/devc.cue
 	cue export hack/devc.cue -f -o .devcontainer/devcontainer.json
 
-HOF_VER?=0.6.8-beta.7
-CUE_VER?=v0.5.0-beta.5
+HOF_VER?=0.6.8
+CUE_VER?=v0.6.0
 
 versions:
 	@echo "HOF_VER: $(HOF_VER)"
